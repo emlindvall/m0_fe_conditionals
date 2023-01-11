@@ -19,28 +19,27 @@ var numberDogs = 0
 // EXAMPLE: log the result of the comparison: is numberTeachers greater than numberStudents?
 console.log("Is numberTeachers greater than numberStudents?", numberTeachers > numberStudents);
 // this should log: "Is numberTeachers greater than numberStudents?" false
-
 // YOU DO: log the result of the comparison: is numberTeachers less than numberStudents?
 // this should log: true
-
+console.log("Is nnumberTeachers less than numberStudents?", numberTeachers < numberStudents);
 // YOU DO: log the result of the comparison: is numberTeachers strictly equal to stringTeachers?
 // this should log: false
-
+console.log("Is numberTeachers strictly equal to stringTeachers?", numberTeachers === stringTeachers);
 // YOU DO: log the result of the comparison: is numberTeachers not equal to numberStudents?
 // this should log: true
-
+console.log("Is numberTeachers not equal to numberStudents?", numberTeachers !== numberStudents);
 // YOU DO: log the result of the comparison: is numberStudents greater than or equal to 20?
 // this should log: true
-
+console.log("Is numberStudents greater than or equal to 20?", numberStudents >= 20);
 // YOU DO: log the result of the comparison: is numberStudents greater than or equal to 21?
 // this should log: false
-
+console.log("Is numberStudents greater than or equal to 21?", numberStudents >= 21);
 // YOU DO: log the result of the comparison: is numberStudents less than or equal to 20?
 // this should log: true
-
+console.log("Is numberStudents less than or equal to 20?", numberStudents <= 20);
 // YOU DO: log the result of the comparison: is numberStudents less than or equal to 21?
 // this should log: true
-
+console.log("Is numberStudents less than or equal to 21?", numberStudents <=21);
 
 // #-------------------
 // PART 2: Articulating what you are doing
@@ -52,21 +51,21 @@ console.log("Is numberTeachers greater than numberStudents?", numberTeachers > n
 // Make sure YOU can explain it that way!
 
 console.log(4 < 9);
-// YOU DO: Explain.
+// YOU DO: Explain. Log the result of the comparison: Is 4 less than 9?
 
 var books = 3;
 console.log(4 < books);
-// YOU DO: Explain.
+// YOU DO: Explain. Define variable books as 3; log the result of the comparison: Is 4 less than 3?
 
 var friends = 6;
 var siblings = 2;
 console.log(friends > siblings);
-// YOU DO: Explain.
+// YOU DO: Explain. Define variable friends as 6; define variable siblings as 2; log the result of comparison: Is 6 greater than 2?
 
 var attendees = 9;
 var meals = 8;
 console.log(attendees !== meals);
-// YOU DO: Explain.
+// YOU DO: Explain. Define variable attendees as 9; define variable meals as 8; log the result of comoparison is 9 not strictly equal to 8?
 
 
 // #-------------------
@@ -89,15 +88,19 @@ var age = 1;
 
 // YOU DO:
 // Determine if the dog loves to play and loves treats
+console.log("Does the dog love to play and love treats?", lovesToPlay && lovesTreats);
 
 
 // Determine if the dog loves to play and loves the dog park
-
+console.log("Does the dog love to play and love the dog park?", lovesToPlay && lovesDogPark);
 
 // Determine if the dog loves to play or loves the dog park
-
+console.log("Does the dog love to play or love the dog park?", lovesToPlay || lovesDogPark);
 
 // Determine if the dog loves to play and is a puppy
+console.log("Does the dog love to play and is a puppy?", lovesToPlay && age);
 
 // What did your final line of code evaluate to? Why do you think that is? Explain.
-// ANSWER:
+// ANSWER: The out put was 1. Comparison operators only compare the same types of variables (e.g. two strings,
+// two numbers, or two booleans) but not different types of variables (e.g. one boolean and one number). I
+// basically asked if the dog is both "true" and "1".
